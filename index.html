@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <script type="text/javascript" charset="utf-8">
+        var valores = new Array()
+        for (i=0;i<10;i++)
+        {
+            valores[i] = ((Math.random()*10) % 10);
+        }
+        for (j=0;j<10;j++)
+        {
+            for (k=0;k<10;k++)
+            {
+                if (valores[k] > valores[k+1])
+                {
+                    aux = valores[k+1];
+                    valores[k+1] = valores[k];
+                    valores[k] = aux;
+                }
+            }
+        }
+        for(i=0;i<10;i++)
+        {
+            document.write(valores[i] + "<BR>");
+        }
+        
+        </script> 
+
+    </body>
+</html>
