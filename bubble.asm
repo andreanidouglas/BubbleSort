@@ -25,7 +25,7 @@ MAIORA:
     LD IX+01H, A
     RET
     
-MAIORB:
+MENORB:
     LD IX+00H, A
     LD IX+01H, B
     JP RETORNO
