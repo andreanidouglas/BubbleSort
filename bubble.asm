@@ -1,10 +1,8 @@
-
-
-
     LD E, B    
     LD D, C
 RETORNO:
-    LD IX, HL
+    PUSH HL
+    POP IX
     LD A, (IX+00H)
     LD B, (IX+01H)
     CP E
@@ -39,5 +37,4 @@ DESVIOB:
     CP A, B
     CALL P, MENORB
     RET
-    
     
